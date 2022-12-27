@@ -5,8 +5,8 @@
 void main() {
 	int i;
 	srand((unsigned)time(NULL));
-	for (i = 0; i < 10; i++) {
-		printf("%d", rand() % 100);
+	for (i = 0; i < 6; i++) {
+		printf("%d\t", rand() % 45);
 	}
 	printf("\n");
 }
