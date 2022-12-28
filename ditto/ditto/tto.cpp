@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 #define SIZE 6 //define 매크로를 정의할 때 앞에 써주는 키워드 
-
+void sort(int arr[]);
 /*
 * #define [매크로 상수명][매크로 확장 문자열]
 * 미리 정의한 매크로 상수명이 쓰이면, 매크로 확장 문자열로 치환한다.
@@ -23,9 +23,23 @@ int main() {
 			if (ditto[i] == ditto[j]) i--;//같은 값 빼기
 		}
 	}
+	sort(ditto);
+
 	printf("인생 한 방: \n");
 	for (i = 0; i < SIZE; i++) {
 		printf("%d\t", ditto[i]);
 	}
 	return 0;
+}
+void sort(int arr[]) {
+	int i, j, min, temp;
+	for (i = 0; i < SIZE - 1; i++) {
+		min = i;
+		for (j = i + 1; j < SIZE; j++) {
+			if (arr[j] < arr[min]) min = j;
+		}
+		temp = arr[i];
+		arr[i] = arr[min];
+		arr[min] = temp;
+	}
 }
