@@ -2,13 +2,14 @@
 #include <stdlib.h>
 #include <time.h>
 
-void main() {
+int mk1() {
 	int i;
 	srand((unsigned)time(NULL));
 	for (i = 0; i < 6; i++) {
 		printf("%d\t", rand() % 45);
 	}
 	printf("\n");
+	return 0;
 }
 /*
 * 예제 1 문장 10번 출력하기

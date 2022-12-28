@@ -1,6 +1,6 @@
 #include <stdio.h>
 // placeholder types
-int main() {
+int yammmm() {
 	double x = 123.4567;
 
 	printf("[%-10.3f]", x);
@@ -13,5 +13,5 @@ int main() {
 	printf("%f\n", 1234.5678);//실수
 	printf("%%\n");//%기호 자체 출력
 	printf("%s(아스키코드출력)\n", "☎");
-
+	return 0;
 }

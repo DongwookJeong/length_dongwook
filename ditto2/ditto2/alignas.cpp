@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>//malloc 함수가 포함된 헤더 파일
 
-void main() {
+void yam() {
 	int* arr;
 	arr = (int*)malloc(sizeof(int) * 4);// size 4 동적 할당
 
